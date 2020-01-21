@@ -1,29 +1,15 @@
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <vector>
-#include <string>
 #include <vector>
 
 void fillArray(std::vector<int>& array)
 {
-	/* std::cout << "Input data: ";
-	int value{};
-	while (std::cin >> value)		//put all data into the array
-	{
-		array.push_back(value);		//put current value at the end of the array
-	} */
-
 	std::cout << "Input data: ";
 	int value{};
 	while (std::cin >> value)		//put all data into the array
 	{
-		if (!std::cin.peek())
-			break;
 		array.push_back(value);		//put current value at the end of the array
 	}
 }
-
 int determineInput(const std::vector<int>& array)
 {
 	std::vector<int> tempArray;
